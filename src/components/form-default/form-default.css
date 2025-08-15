@@ -1,0 +1,46 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
+    background-color: #f3eacb;
+    border: 1px solid #a68a64;
+    color: #3e2c1c;
+}
+
+.form-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+form fieldset{
+    width: 100%;
+}
+
+
+form input, form select, form textarea {
+    flex:1;
+    width: auto;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #e3d3ab;
+}
+
+form button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color:  #3e2c1c;
+    color: white;
+    cursor: pointer;
+}

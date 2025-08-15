@@ -1,0 +1,9 @@
+.view-magic-page {
+  padding: 2rem; 
+}
+.filters input, .filters select {
+    background-color: #f3eacb;
+    border: 1px solid #a68a64;
+    height: 32px;
+
+}

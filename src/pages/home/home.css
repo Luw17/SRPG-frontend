@@ -1,0 +1,44 @@
+.homepage-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.homepage-title {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.homepage-subtitle {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.homepage-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.homepage-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.homepage-button:hover {
+  background-color: #0056b3;
+}
