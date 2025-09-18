@@ -1,9 +1,17 @@
 .view-magic-page {
-  padding: 2rem; 
+  padding: 2rem;
+  margin-left: 20px;
+}
+.view-magic-page h1 {
+  color: white;
+  margin-bottom: 1rem;
 }
 .filters input, .filters select {
-    background-color: #f3eacb;
-    border: 1px solid #a68a64;
+    background-color: #5E5E5E;
+    border: 1px solid #5E5E5E;
     height: 32px;
-
+    color: white;
+}
+.filters input::placeholder {
+    color: white;
 }

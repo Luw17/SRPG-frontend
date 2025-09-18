@@ -1,5 +1,4 @@
 .homepage-container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +29,7 @@
 }
 
 .homepage-button {
-  background-color: #007bff;
+  background-color: #363636;
   border: none;
   color: white;
   padding: 12px 20px;
@@ -40,5 +39,5 @@
 }
 
 .homepage-button:hover {
-  background-color: #0056b3;
+  background-color: #222;
 }

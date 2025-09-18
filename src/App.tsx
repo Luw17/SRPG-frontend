@@ -4,6 +4,8 @@ import Login from './pages/login/login';
 import Home from './pages/home/home';
 import AddMagic from './pages/add-magic/add-magic';
 import ViewMagic from './pages/view-magic/view-magic';
+import AddItem from './pages/add-item/add-item';
+import Layout from './components/layout/layout';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = React.useState(
@@ -13,21 +15,57 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Página de login */}
+        {/* Página de login (sem sidebar) */}
         <Route path="/" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
 
-        {/* Páginas protegidas */}
+        {/* Páginas com sidebar */}
         <Route
           path="/home"
-          element={isLoggedIn ? <Home /> : <Navigate to="/" replace />}
+          element={
+            isLoggedIn ? (
+              <Layout>
+                <Home />
+              </Layout>
+            ) : (
+              <Navigate to="/" replace />
+            )
+          }
         />
         <Route
           path="/add-magic"
-          element={isLoggedIn ? <AddMagic /> : <Navigate to="/" replace />}
+          element={
+            isLoggedIn ? (
+              <Layout>
+                <AddMagic />
+              </Layout>
+            ) : (
+              <Navigate to="/" replace />
+            )
+          }
         />
         <Route
           path="/view-magic"
-          element={isLoggedIn ? <ViewMagic /> : <Navigate to="/" replace />}
+          element={
+            isLoggedIn ? (
+              <Layout>
+                <ViewMagic />
+              </Layout>
+            ) : (
+              <Navigate to="/" replace />
+            )
+          }
+        />
+        <Route
+          path="/add-item"
+          element={
+            isLoggedIn ? (
+              <Layout>
+                <AddItem />
+              </Layout>
+            ) : (
+              <Navigate to="/" replace />
+            )
+          }
         />
       </Routes>
     </Router>

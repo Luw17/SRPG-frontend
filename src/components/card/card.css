@@ -1,6 +1,6 @@
 .card{
-    background-color: #f3eacb;
-    border: 1px solid #a68a64;
+    background-color: #5E5E5E;
+    border: 1px solid #5E5E5E;
     width: auto;
     flex: 1 1 calc(25% - 1rem);
     display: flex;
@@ -13,5 +13,25 @@
 }
 
 .card-content p, .card-content h2 {
-    color: #3e2c1c;
+    color: white;
+
+}
+
+.card-content h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-content button {
+  background-color: #363636;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.card-content button:hover {
+    background-color: #222;
+    cursor: pointer;
 }

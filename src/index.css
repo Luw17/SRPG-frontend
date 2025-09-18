@@ -15,14 +15,20 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
-h1, h2, h3, .medieval {
-  font-family: 'MedievalSharp', cursive;
+@font-face {
+  font-family: 'ModerneSans';
+  src: url('./assets/fonts/Moderne-Sans-Font/ModerneSansFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+h1, h2, h3, .medieval {
+  font-family: 'ModerneSans';
+  font-weight: normal;
+}
+
 body {
-    background-image: url('./assets/img/fundo.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+background-color: #878787;
 }
 
 

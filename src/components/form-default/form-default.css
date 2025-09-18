@@ -7,9 +7,9 @@ form{
     padding: 20px;
     border-radius: 10px;
     height: auto;
-    background-color: #f3eacb;
-    border: 1px solid #a68a64;
-    color: #3e2c1c;
+    background-color: #5E5E5E;
+    border: 1px solid #5E5E5E;
+    color: white;
 }
 
 .form-wrapper label {
@@ -32,7 +32,8 @@ form input, form select, form textarea {
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #ccc;
-    background-color: #e3d3ab;
+    background-color: #5E5E5E;
+    color: white;
 }
 
 form button{
@@ -40,7 +41,10 @@ form button{
     padding: 10px;
     border-radius: 5px;
     border: none;
-    background-color:  #3e2c1c;
+    background-color:  #363636;
     color: white;
     cursor: pointer;
 }
+form button:hover{
+    background-color: #222;
+}   

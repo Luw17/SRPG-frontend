@@ -196,13 +196,16 @@ const AddMagic: React.FC = () => {
                 <option value="fogo">Fogo</option>
                 <option value="força">Força</option>
                 <option value="elétrico">Elétrico</option>
-                <option value="necromante">Necromante</option>
+                <option value="necrótico">Necrótico</option>
                 <option value="radiante">Radiante</option>
                 <option value="veneno">Veneno</option>
                 <option value="psíquico">Psíquico</option>
                 <option value="corte">Corte</option>
                 <option value="concussão">Concussão</option>
                 <option value="perfuração">Perfuração</option>
+                <option value="energia">Energia</option>
+                <option value="cura">Cura</option>
+                <option value="variável">Variável</option>
               </select>
 
               <button type="button" onClick={() => removeDamageEntry(index)}>
