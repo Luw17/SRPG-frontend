@@ -61,6 +61,9 @@ export default function Sidebar() {
             <li>
               <Link to="/add-item" onClick={toggleSidebar}>Adicionar Item</Link>
             </li>
+            <li>
+              <Link to="/character-sheet" onClick={toggleSidebar}>Ficha do Personagem</Link>
+            </li>
           </ul>
         </nav>
       </aside>

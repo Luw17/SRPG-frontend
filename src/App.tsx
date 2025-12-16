@@ -6,6 +6,7 @@ import AddMagic from './pages/add-magic/add-magic';
 import ViewMagic from './pages/view-magic/view-magic';
 import AddItem from './pages/add-item/add-item';
 import Layout from './components/layout/layout';
+import CharacterSheet from './pages/character-page/character-sheet';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = React.useState(
@@ -67,6 +68,15 @@ function App() {
             )
           }
         />
+        <Route path="character-sheet" element={
+          isLoggedIn ? (
+            <Layout>
+              <CharacterSheet />
+            </Layout>
+          ) : (
+            <Navigate to="/" replace />
+          )
+        }/>
       </Routes>
     </Router>
   );

@@ -106,6 +106,7 @@ const AddItem: React.FC = () => {
             <option value="diversos">Diversos</option>
             <option value="valioso">valioso</option>
             <option value="material">material</option>
+            <option value="outro">Acessório</option>
           </select>
         </label>
 
